@@ -10,7 +10,12 @@ import holidays
 import pandas as pd
 
 
-def export_parquet(db_path: Path) -> dict:
+def export_parquet(db_path: Path, *, provenance: dict | None = None) -> dict:
+    """Trainingskorpus als Parquet exportieren, prüfen und mit Manifest veröffentlichen.
+
+    provenance: Herkunftsangaben für das Manifest, z. B. SHA-256 der
+    Eingabedateien und Git-Commit des Codestands.
+    """
     db_path = Path(db_path).resolve()
     if not db_path.is_file():
         raise FileNotFoundError(f"DuckDB-Datei nicht vorhanden: {db_path}")
@@ -181,6 +186,7 @@ def export_parquet(db_path: Path) -> dict:
                 "train_year_local": 2016,
                 "test_year_local": 2017,
             },
+            "provenance": provenance or {},
         }
         temp_manifest.write_text(
             json.dumps(manifest, indent=2, ensure_ascii=False) + "\n",

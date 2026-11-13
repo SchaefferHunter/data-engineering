@@ -69,6 +69,35 @@ def create_quality_report(
             GROUP BY building_id
             ORDER BY missing_values DESC, building_id
         """).fetchall()
+        # Nullverbrauch je Gebäude: Anzahl, Anzahl zusammenhängender Phasen
+        # und längste Phase (gaps and islands). NULL unterbricht eine Phase.
+        zero_runs = con.execute("""
+            WITH flagged AS (
+                SELECT building_id, timestamp,
+                       COALESCE(consumption = 0, FALSE) AS is_zero
+                FROM energy
+            ),
+            grouped AS (
+                SELECT building_id, is_zero,
+                       row_number() OVER (PARTITION BY building_id ORDER BY timestamp)
+                     - row_number() OVER (PARTITION BY building_id, is_zero
+                                          ORDER BY timestamp) AS island
+                FROM flagged
+            ),
+            runs AS (
+                SELECT building_id, island, COUNT(*) AS run_hours
+                FROM grouped
+                WHERE is_zero
+                GROUP BY building_id, island
+            )
+            SELECT building_id,
+                   CAST(SUM(run_hours) AS BIGINT) AS zero_values,
+                   CAST(COUNT(*) AS BIGINT) AS zero_runs,
+                   CAST(MAX(run_hours) AS BIGINT) AS longest_zero_run_hours
+            FROM runs
+            GROUP BY building_id
+            ORDER BY zero_values DESC, building_id
+        """).fetchall()
 
     if not site_rows or len(site_rows) != 1:
         raise ValueError("Dieser Bericht unterstuetzt einen Standort pro Lauf.")
@@ -98,6 +127,24 @@ def create_quality_report(
         for building_id, hours, valid, missing, pct in by_building
     ]
     top_five_missing = sum(b["missing_values"] for b in building_details[:5])
+
+    zero_details = [
+        {
+            "building_id": building_id,
+            "zero_values": int(zeros),
+            "zero_runs": int(runs),
+            "longest_zero_run_hours": int(longest),
+        }
+        for building_id, zeros, runs, longest in zero_runs
+    ]
+    zero_total = sum(z["zero_values"] for z in zero_details)
+    # Ab 24 h ununterbrochenem Nullverbrauch ist ein Messausfall wahrscheinlicher
+    # als echter Stillstand. Die Werte werden nur gekennzeichnet, nicht geändert.
+    long_zero_threshold = 24
+    long_zero_buildings = [
+        z["building_id"] for z in zero_details
+        if z["longest_zero_run_hours"] >= long_zero_threshold
+    ]
     site_id, iana_zone, source_offset = site_rows[0]
 
     report = {
@@ -126,6 +173,17 @@ def create_quality_report(
             "share_of_all_missing_percent": round(100 * top_five_missing / missing_energy, 2)
             if missing_energy else 0.0,
             "all_selected_buildings": building_details,
+        },
+        "zero_consumption": {
+            "zero_values": int(zero_total),
+            "share_of_rows_percent": round(100 * zero_total / energy_rows, 4),
+            "buildings_with_zero_values": len(zero_details),
+            "long_zero_run_threshold_hours": long_zero_threshold,
+            "buildings_with_long_zero_runs": len(long_zero_buildings),
+            "building_ids_with_long_zero_runs": long_zero_buildings,
+            "five_buildings_with_most_zero_values": zero_details[:5],
+            "handling": "unveraendert im Korpus; nur dokumentiert, keine Korrektur",
+            "all_buildings_with_zero_values": zero_details,
         },
         "weather": {
             "raw_archive_rows": int(weather_validation["rows"]),
@@ -171,4 +229,6 @@ def create_quality_report(
         "completeness_percent": report["electricity"]["completeness_percent"],
         "missing_consumption": int(missing_energy),
         "weakest_building": building_details[0]["building_id"],
+        "zero_values": int(zero_total),
+        "buildings_with_long_zero_runs": len(long_zero_buildings),
     }

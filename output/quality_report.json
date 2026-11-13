@@ -1,0 +1,1882 @@
+{
+  "generated_at_utc": "2026-11-13T11:00:12.349422+00:00",
+  "site_id": "Fox",
+  "time_assumption": {
+    "source_utc_offset_hours": -7,
+    "calendar_iana_timezone": "America/Phoenix"
+  },
+  "selection": {
+    "criteria": {
+      "completeness_total_min": 0.95,
+      "completeness_per_year_min": 0.9
+    },
+    "candidate_buildings": 137,
+    "selected_buildings": 134,
+    "excluded_buildings": 3,
+    "excluded_building_ids": [
+      "Fox_assembly_Jerrod",
+      "Fox_education_Vernon",
+      "Fox_education_Maureen"
+    ]
+  },
+  "electricity": {
+    "rows": 2350896,
+    "expected_hours_per_building": 17544,
+    "missing_consumption": 1793,
+    "completeness_percent": 99.9237,
+    "first_timestamp_utc": "2016-01-01T07:00:00+00:00",
+    "last_timestamp_utc": "2018-01-01T06:00:00+00:00",
+    "five_buildings_with_most_missing_values": [
+      {
+        "building_id": "Fox_assembly_Kathie",
+        "hours": 17544,
+        "valid_values": 17251,
+        "missing_values": 293,
+        "completeness_percent": 98.3299
+      },
+      {
+        "building_id": "Fox_education_Shirley",
+        "hours": 17544,
+        "valid_values": 17314,
+        "missing_values": 230,
+        "completeness_percent": 98.689
+      },
+      {
+        "building_id": "Fox_office_Juana",
+        "hours": 17544,
+        "valid_values": 17357,
+        "missing_values": 187,
+        "completeness_percent": 98.9341
+      },
+      {
+        "building_id": "Fox_education_Cynthia",
+        "hours": 17544,
+        "valid_values": 17394,
+        "missing_values": 150,
+        "completeness_percent": 99.145
+      },
+      {
+        "building_id": "Fox_education_Suzan",
+        "hours": 17544,
+        "valid_values": 17430,
+        "missing_values": 114,
+        "completeness_percent": 99.3502
+      }
+    ],
+    "missing_values_in_five_weakest_buildings": 974,
+    "share_of_all_missing_percent": 54.32,
+    "all_selected_buildings": [
+      {
+        "building_id": "Fox_assembly_Kathie",
+        "hours": 17544,
+        "valid_values": 17251,
+        "missing_values": 293,
+        "completeness_percent": 98.3299
+      },
+      {
+        "building_id": "Fox_education_Shirley",
+        "hours": 17544,
+        "valid_values": 17314,
+        "missing_values": 230,
+        "completeness_percent": 98.689
+      },
+      {
+        "building_id": "Fox_office_Juana",
+        "hours": 17544,
+        "valid_values": 17357,
+        "missing_values": 187,
+        "completeness_percent": 98.9341
+      },
+      {
+        "building_id": "Fox_education_Cynthia",
+        "hours": 17544,
+        "valid_values": 17394,
+        "missing_values": 150,
+        "completeness_percent": 99.145
+      },
+      {
+        "building_id": "Fox_education_Suzan",
+        "hours": 17544,
+        "valid_values": 17430,
+        "missing_values": 114,
+        "completeness_percent": 99.3502
+      },
+      {
+        "building_id": "Fox_office_Easter",
+        "hours": 17544,
+        "valid_values": 17441,
+        "missing_values": 103,
+        "completeness_percent": 99.4129
+      },
+      {
+        "building_id": "Fox_warehouse_Pearl",
+        "hours": 17544,
+        "valid_values": 17463,
+        "missing_values": 81,
+        "completeness_percent": 99.5383
+      },
+      {
+        "building_id": "Fox_warehouse_Lorretta",
+        "hours": 17544,
+        "valid_values": 17479,
+        "missing_values": 65,
+        "completeness_percent": 99.6295
+      },
+      {
+        "building_id": "Fox_education_Virginia",
+        "hours": 17544,
+        "valid_values": 17499,
+        "missing_values": 45,
+        "completeness_percent": 99.7435
+      },
+      {
+        "building_id": "Fox_assembly_Carlos",
+        "hours": 17544,
+        "valid_values": 17505,
+        "missing_values": 39,
+        "completeness_percent": 99.7777
+      },
+      {
+        "building_id": "Fox_education_Lesley",
+        "hours": 17544,
+        "valid_values": 17509,
+        "missing_values": 35,
+        "completeness_percent": 99.8005
+      },
+      {
+        "building_id": "Fox_education_Claude",
+        "hours": 17544,
+        "valid_values": 17519,
+        "missing_values": 25,
+        "completeness_percent": 99.8575
+      },
+      {
+        "building_id": "Fox_education_Marcelina",
+        "hours": 17544,
+        "valid_values": 17521,
+        "missing_values": 23,
+        "completeness_percent": 99.8689
+      },
+      {
+        "building_id": "Fox_health_Lorena",
+        "hours": 17544,
+        "valid_values": 17522,
+        "missing_values": 22,
+        "completeness_percent": 99.8746
+      },
+      {
+        "building_id": "Fox_education_Elvira",
+        "hours": 17544,
+        "valid_values": 17523,
+        "missing_values": 21,
+        "completeness_percent": 99.8803
+      },
+      {
+        "building_id": "Fox_assembly_Boyce",
+        "hours": 17544,
+        "valid_values": 17528,
+        "missing_values": 16,
+        "completeness_percent": 99.9088
+      },
+      {
+        "building_id": "Fox_assembly_Dixie",
+        "hours": 17544,
+        "valid_values": 17528,
+        "missing_values": 16,
+        "completeness_percent": 99.9088
+      },
+      {
+        "building_id": "Fox_education_Charles",
+        "hours": 17544,
+        "valid_values": 17528,
+        "missing_values": 16,
+        "completeness_percent": 99.9088
+      },
+      {
+        "building_id": "Fox_education_Etta",
+        "hours": 17544,
+        "valid_values": 17528,
+        "missing_values": 16,
+        "completeness_percent": 99.9088
+      },
+      {
+        "building_id": "Fox_education_Jaclyn",
+        "hours": 17544,
+        "valid_values": 17528,
+        "missing_values": 16,
+        "completeness_percent": 99.9088
+      },
+      {
+        "building_id": "Fox_education_Janina",
+        "hours": 17544,
+        "valid_values": 17528,
+        "missing_values": 16,
+        "completeness_percent": 99.9088
+      },
+      {
+        "building_id": "Fox_education_Otilia",
+        "hours": 17544,
+        "valid_values": 17528,
+        "missing_values": 16,
+        "completeness_percent": 99.9088
+      },
+      {
+        "building_id": "Fox_lodging_Stephan",
+        "hours": 17544,
+        "valid_values": 17528,
+        "missing_values": 16,
+        "completeness_percent": 99.9088
+      },
+      {
+        "building_id": "Fox_education_Miguelina",
+        "hours": 17544,
+        "valid_values": 17534,
+        "missing_values": 10,
+        "completeness_percent": 99.943
+      },
+      {
+        "building_id": "Fox_education_Dominique",
+        "hours": 17544,
+        "valid_values": 17535,
+        "missing_values": 9,
+        "completeness_percent": 99.9487
+      },
+      {
+        "building_id": "Fox_public_Denny",
+        "hours": 17544,
+        "valid_values": 17538,
+        "missing_values": 6,
+        "completeness_percent": 99.9658
+      },
+      {
+        "building_id": "Fox_assembly_Cecelia",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_assembly_Cindy",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_assembly_Emma",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_education_Eldon",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_education_Elois",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_education_Gayla",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_education_Geoffrey",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_education_Gloria",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_education_Heriberto",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_education_Leota",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_education_Maris",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_education_Marlana",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_education_Rosie",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_education_Sterling",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_education_Tonya",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_education_Wendell",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_food_Francesco",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_lodging_Alana",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_lodging_Isabell",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_lodging_Wallace",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_lodging_Winifred",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_office_Berniece",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_office_Carson",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_office_Demetrius",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_office_Margarita",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_office_Molly",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_office_Sheila",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_office_Yong",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_parking_Tommie",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_public_Lauren",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_public_Martin",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_public_Rhonda",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_religion_Maurice",
+        "hours": 17544,
+        "valid_values": 17541,
+        "missing_values": 3,
+        "completeness_percent": 99.9829
+      },
+      {
+        "building_id": "Fox_assembly_Adrianne",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_assembly_Audrey",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_assembly_Cathy",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_assembly_Gary",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_assembly_Renna",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_assembly_Terrell",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_education_Ashli",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_education_Dewayne",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_education_Eddy",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_education_Elizabeth",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_education_Leona",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_education_Lilly",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_education_Long",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_education_Louie",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_education_Melinda",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_education_Melvin",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_education_Rudolph",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_education_Shawanda",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_education_Stacia",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_education_Theodore",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_education_Virgil",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_education_Willis",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_lodging_Angla",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_lodging_Frances",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_lodging_Jina",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_lodging_Warren",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_office_Alice",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_office_Bernard",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_office_Joy",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_parking_Felipa",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_parking_Lynelle",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_public_Bart",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_public_Belle",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_retail_Manie",
+        "hours": 17544,
+        "valid_values": 17542,
+        "missing_values": 2,
+        "completeness_percent": 99.9886
+      },
+      {
+        "building_id": "Fox_assembly_Bradley",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_assembly_Christie",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_assembly_Johnnie",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_assembly_Lakeisha",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_assembly_Leeanne",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_assembly_Sheldon",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_assembly_Tony",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_education_Andre",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_education_Burton",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_education_Carleen",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_education_Claire",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_education_Delma",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_education_Jacqueline",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_education_John",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_education_Kendrick",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_education_Kim",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_education_Kris",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_education_Nilda",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_education_Ollie",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_education_Ray",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_education_Shaun",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_education_Tamika",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_education_Yolande",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_food_Scott",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_lodging_Helen",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_lodging_Morris",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_lodging_Stephen",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_office_Brandy",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_office_Clayton",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_office_Edythe",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_office_Essie",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_office_Gaylord",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_office_Israel",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_office_Karima",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_office_Rowena",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_office_Susanne",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_office_Thelma",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_office_Vicki",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_office_Zachary",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_utility_Marian",
+        "hours": 17544,
+        "valid_values": 17543,
+        "missing_values": 1,
+        "completeness_percent": 99.9943
+      },
+      {
+        "building_id": "Fox_education_Henrietta",
+        "hours": 17544,
+        "valid_values": 17544,
+        "missing_values": 0,
+        "completeness_percent": 100.0
+      }
+    ]
+  },
+  "zero_consumption": {
+    "zero_values": 19440,
+    "share_of_rows_percent": 0.8269,
+    "buildings_with_zero_values": 130,
+    "long_zero_run_threshold_hours": 24,
+    "buildings_with_long_zero_runs": 21,
+    "building_ids_with_long_zero_runs": [
+      "Fox_education_Jacqueline",
+      "Fox_education_Elizabeth",
+      "Fox_education_Shaun",
+      "Fox_education_Maris",
+      "Fox_education_Gayla",
+      "Fox_religion_Maurice",
+      "Fox_warehouse_Lorretta",
+      "Fox_assembly_Bradley",
+      "Fox_assembly_Boyce",
+      "Fox_education_John",
+      "Fox_office_Gaylord",
+      "Fox_education_Stacia",
+      "Fox_office_Margarita",
+      "Fox_education_Rudolph",
+      "Fox_assembly_Terrell",
+      "Fox_assembly_Cathy",
+      "Fox_education_Marlana",
+      "Fox_education_Lilly",
+      "Fox_education_Melvin",
+      "Fox_education_Henrietta",
+      "Fox_education_Delma"
+    ],
+    "five_buildings_with_most_zero_values": [
+      {
+        "building_id": "Fox_education_Jacqueline",
+        "zero_values": 6253,
+        "zero_runs": 581,
+        "longest_zero_run_hours": 117
+      },
+      {
+        "building_id": "Fox_education_Elizabeth",
+        "zero_values": 2412,
+        "zero_runs": 36,
+        "longest_zero_run_hours": 2315
+      },
+      {
+        "building_id": "Fox_education_Shaun",
+        "zero_values": 2290,
+        "zero_runs": 11,
+        "longest_zero_run_hours": 1868
+      },
+      {
+        "building_id": "Fox_education_Maris",
+        "zero_values": 1963,
+        "zero_runs": 5,
+        "longest_zero_run_hours": 776
+      },
+      {
+        "building_id": "Fox_education_Gayla",
+        "zero_values": 1221,
+        "zero_runs": 6,
+        "longest_zero_run_hours": 1037
+      }
+    ],
+    "handling": "unveraendert im Korpus; nur dokumentiert, keine Korrektur",
+    "all_buildings_with_zero_values": [
+      {
+        "building_id": "Fox_education_Jacqueline",
+        "zero_values": 6253,
+        "zero_runs": 581,
+        "longest_zero_run_hours": 117
+      },
+      {
+        "building_id": "Fox_education_Elizabeth",
+        "zero_values": 2412,
+        "zero_runs": 36,
+        "longest_zero_run_hours": 2315
+      },
+      {
+        "building_id": "Fox_education_Shaun",
+        "zero_values": 2290,
+        "zero_runs": 11,
+        "longest_zero_run_hours": 1868
+      },
+      {
+        "building_id": "Fox_education_Maris",
+        "zero_values": 1963,
+        "zero_runs": 5,
+        "longest_zero_run_hours": 776
+      },
+      {
+        "building_id": "Fox_education_Gayla",
+        "zero_values": 1221,
+        "zero_runs": 6,
+        "longest_zero_run_hours": 1037
+      },
+      {
+        "building_id": "Fox_religion_Maurice",
+        "zero_values": 1085,
+        "zero_runs": 161,
+        "longest_zero_run_hours": 99
+      },
+      {
+        "building_id": "Fox_warehouse_Lorretta",
+        "zero_values": 689,
+        "zero_runs": 17,
+        "longest_zero_run_hours": 444
+      },
+      {
+        "building_id": "Fox_assembly_Bradley",
+        "zero_values": 518,
+        "zero_runs": 5,
+        "longest_zero_run_hours": 506
+      },
+      {
+        "building_id": "Fox_assembly_Boyce",
+        "zero_values": 515,
+        "zero_runs": 4,
+        "longest_zero_run_hours": 506
+      },
+      {
+        "building_id": "Fox_education_John",
+        "zero_values": 320,
+        "zero_runs": 5,
+        "longest_zero_run_hours": 200
+      },
+      {
+        "building_id": "Fox_office_Gaylord",
+        "zero_values": 251,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 204
+      },
+      {
+        "building_id": "Fox_education_Stacia",
+        "zero_values": 200,
+        "zero_runs": 64,
+        "longest_zero_run_hours": 65
+      },
+      {
+        "building_id": "Fox_office_Margarita",
+        "zero_values": 170,
+        "zero_runs": 8,
+        "longest_zero_run_hours": 103
+      },
+      {
+        "building_id": "Fox_education_Rudolph",
+        "zero_values": 134,
+        "zero_runs": 24,
+        "longest_zero_run_hours": 54
+      },
+      {
+        "building_id": "Fox_assembly_Terrell",
+        "zero_values": 127,
+        "zero_runs": 8,
+        "longest_zero_run_hours": 113
+      },
+      {
+        "building_id": "Fox_assembly_Cathy",
+        "zero_values": 118,
+        "zero_runs": 17,
+        "longest_zero_run_hours": 92
+      },
+      {
+        "building_id": "Fox_education_Marlana",
+        "zero_values": 98,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 91
+      },
+      {
+        "building_id": "Fox_education_Lilly",
+        "zero_values": 97,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 91
+      },
+      {
+        "building_id": "Fox_education_Melvin",
+        "zero_values": 97,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 90
+      },
+      {
+        "building_id": "Fox_education_Marcelina",
+        "zero_values": 71,
+        "zero_runs": 69,
+        "longest_zero_run_hours": 2
+      },
+      {
+        "building_id": "Fox_assembly_Johnnie",
+        "zero_values": 58,
+        "zero_runs": 6,
+        "longest_zero_run_hours": 13
+      },
+      {
+        "building_id": "Fox_parking_Felipa",
+        "zero_values": 51,
+        "zero_runs": 30,
+        "longest_zero_run_hours": 10
+      },
+      {
+        "building_id": "Fox_education_Henrietta",
+        "zero_values": 34,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 32
+      },
+      {
+        "building_id": "Fox_education_Delma",
+        "zero_values": 33,
+        "zero_runs": 4,
+        "longest_zero_run_hours": 30
+      },
+      {
+        "building_id": "Fox_education_Janina",
+        "zero_values": 26,
+        "zero_runs": 14,
+        "longest_zero_run_hours": 7
+      },
+      {
+        "building_id": "Fox_assembly_Christie",
+        "zero_values": 24,
+        "zero_runs": 7,
+        "longest_zero_run_hours": 9
+      },
+      {
+        "building_id": "Fox_assembly_Adrianne",
+        "zero_values": 23,
+        "zero_runs": 7,
+        "longest_zero_run_hours": 9
+      },
+      {
+        "building_id": "Fox_office_Rowena",
+        "zero_values": 22,
+        "zero_runs": 10,
+        "longest_zero_run_hours": 7
+      },
+      {
+        "building_id": "Fox_health_Lorena",
+        "zero_values": 18,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 17
+      },
+      {
+        "building_id": "Fox_office_Essie",
+        "zero_values": 18,
+        "zero_runs": 5,
+        "longest_zero_run_hours": 13
+      },
+      {
+        "building_id": "Fox_lodging_Angla",
+        "zero_values": 17,
+        "zero_runs": 6,
+        "longest_zero_run_hours": 9
+      },
+      {
+        "building_id": "Fox_lodging_Morris",
+        "zero_values": 17,
+        "zero_runs": 5,
+        "longest_zero_run_hours": 7
+      },
+      {
+        "building_id": "Fox_office_Berniece",
+        "zero_values": 17,
+        "zero_runs": 4,
+        "longest_zero_run_hours": 11
+      },
+      {
+        "building_id": "Fox_public_Belle",
+        "zero_values": 17,
+        "zero_runs": 4,
+        "longest_zero_run_hours": 7
+      },
+      {
+        "building_id": "Fox_warehouse_Pearl",
+        "zero_values": 16,
+        "zero_runs": 4,
+        "longest_zero_run_hours": 7
+      },
+      {
+        "building_id": "Fox_food_Scott",
+        "zero_values": 15,
+        "zero_runs": 4,
+        "longest_zero_run_hours": 12
+      },
+      {
+        "building_id": "Fox_office_Demetrius",
+        "zero_values": 15,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 11
+      },
+      {
+        "building_id": "Fox_office_Zachary",
+        "zero_values": 15,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 11
+      },
+      {
+        "building_id": "Fox_education_Dewayne",
+        "zero_values": 14,
+        "zero_runs": 4,
+        "longest_zero_run_hours": 7
+      },
+      {
+        "building_id": "Fox_office_Molly",
+        "zero_values": 14,
+        "zero_runs": 4,
+        "longest_zero_run_hours": 11
+      },
+      {
+        "building_id": "Fox_retail_Manie",
+        "zero_values": 14,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 7
+      },
+      {
+        "building_id": "Fox_lodging_Frances",
+        "zero_values": 13,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 11
+      },
+      {
+        "building_id": "Fox_education_Carleen",
+        "zero_values": 12,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 7
+      },
+      {
+        "building_id": "Fox_assembly_Lakeisha",
+        "zero_values": 11,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 7
+      },
+      {
+        "building_id": "Fox_assembly_Emma",
+        "zero_values": 10,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 6
+      },
+      {
+        "building_id": "Fox_office_Vicki",
+        "zero_values": 10,
+        "zero_runs": 4,
+        "longest_zero_run_hours": 7
+      },
+      {
+        "building_id": "Fox_assembly_Kathie",
+        "zero_values": 9,
+        "zero_runs": 5,
+        "longest_zero_run_hours": 3
+      },
+      {
+        "building_id": "Fox_assembly_Leeanne",
+        "zero_values": 9,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 7
+      },
+      {
+        "building_id": "Fox_education_Gloria",
+        "zero_values": 9,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 5
+      },
+      {
+        "building_id": "Fox_office_Brandy",
+        "zero_values": 9,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 7
+      },
+      {
+        "building_id": "Fox_assembly_Cindy",
+        "zero_values": 8,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 7
+      },
+      {
+        "building_id": "Fox_lodging_Warren",
+        "zero_values": 8,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 4
+      },
+      {
+        "building_id": "Fox_parking_Tommie",
+        "zero_values": 8,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 6
+      },
+      {
+        "building_id": "Fox_public_Martin",
+        "zero_values": 8,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 7
+      },
+      {
+        "building_id": "Fox_education_Cynthia",
+        "zero_values": 7,
+        "zero_runs": 4,
+        "longest_zero_run_hours": 3
+      },
+      {
+        "building_id": "Fox_education_Kris",
+        "zero_values": 7,
+        "zero_runs": 4,
+        "longest_zero_run_hours": 3
+      },
+      {
+        "building_id": "Fox_education_Tamika",
+        "zero_values": 7,
+        "zero_runs": 4,
+        "longest_zero_run_hours": 3
+      },
+      {
+        "building_id": "Fox_office_Joy",
+        "zero_values": 7,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 7
+      },
+      {
+        "building_id": "Fox_office_Yong",
+        "zero_values": 7,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 6
+      },
+      {
+        "building_id": "Fox_public_Lauren",
+        "zero_values": 7,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 7
+      },
+      {
+        "building_id": "Fox_education_Burton",
+        "zero_values": 6,
+        "zero_runs": 4,
+        "longest_zero_run_hours": 3
+      },
+      {
+        "building_id": "Fox_education_Virginia",
+        "zero_values": 6,
+        "zero_runs": 4,
+        "longest_zero_run_hours": 3
+      },
+      {
+        "building_id": "Fox_office_Easter",
+        "zero_values": 6,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 3
+      },
+      {
+        "building_id": "Fox_education_Charles",
+        "zero_values": 5,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 2
+      },
+      {
+        "building_id": "Fox_education_Elois",
+        "zero_values": 5,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 3
+      },
+      {
+        "building_id": "Fox_education_Kim",
+        "zero_values": 5,
+        "zero_runs": 4,
+        "longest_zero_run_hours": 2
+      },
+      {
+        "building_id": "Fox_education_Leota",
+        "zero_values": 5,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 3
+      },
+      {
+        "building_id": "Fox_education_Miguelina",
+        "zero_values": 5,
+        "zero_runs": 4,
+        "longest_zero_run_hours": 2
+      },
+      {
+        "building_id": "Fox_lodging_Jina",
+        "zero_values": 5,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 3
+      },
+      {
+        "building_id": "Fox_education_Dominique",
+        "zero_values": 4,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 3
+      },
+      {
+        "building_id": "Fox_education_Etta",
+        "zero_values": 4,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 4
+      },
+      {
+        "building_id": "Fox_education_Geoffrey",
+        "zero_values": 4,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 3
+      },
+      {
+        "building_id": "Fox_education_Shirley",
+        "zero_values": 4,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 2
+      },
+      {
+        "building_id": "Fox_education_Theodore",
+        "zero_values": 4,
+        "zero_runs": 4,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Wendell",
+        "zero_values": 4,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 3
+      },
+      {
+        "building_id": "Fox_lodging_Stephan",
+        "zero_values": 4,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 3
+      },
+      {
+        "building_id": "Fox_public_Rhonda",
+        "zero_values": 4,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 3
+      },
+      {
+        "building_id": "Fox_assembly_Carlos",
+        "zero_values": 3,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Kendrick",
+        "zero_values": 3,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 2
+      },
+      {
+        "building_id": "Fox_education_Shawanda",
+        "zero_values": 3,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 2
+      },
+      {
+        "building_id": "Fox_education_Sterling",
+        "zero_values": 3,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Virgil",
+        "zero_values": 3,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 3
+      },
+      {
+        "building_id": "Fox_office_Israel",
+        "zero_values": 3,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_office_Sheila",
+        "zero_values": 3,
+        "zero_runs": 3,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_assembly_Sheldon",
+        "zero_values": 2,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Ashli",
+        "zero_values": 2,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Claude",
+        "zero_values": 2,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Eldon",
+        "zero_values": 2,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 2
+      },
+      {
+        "building_id": "Fox_education_Leona",
+        "zero_values": 2,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Lesley",
+        "zero_values": 2,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Long",
+        "zero_values": 2,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Louie",
+        "zero_values": 2,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 2
+      },
+      {
+        "building_id": "Fox_education_Melinda",
+        "zero_values": 2,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Nilda",
+        "zero_values": 2,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Otilia",
+        "zero_values": 2,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 2
+      },
+      {
+        "building_id": "Fox_education_Rosie",
+        "zero_values": 2,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_food_Francesco",
+        "zero_values": 2,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_lodging_Stephen",
+        "zero_values": 2,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_office_Alice",
+        "zero_values": 2,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_office_Bernard",
+        "zero_values": 2,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_office_Juana",
+        "zero_values": 2,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_office_Susanne",
+        "zero_values": 2,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_public_Bart",
+        "zero_values": 2,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_utility_Marian",
+        "zero_values": 2,
+        "zero_runs": 2,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_assembly_Audrey",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_assembly_Cecelia",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_assembly_Dixie",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_assembly_Gary",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_assembly_Renna",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_assembly_Tony",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Claire",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Eddy",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Elvira",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Heriberto",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Ollie",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Ray",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Suzan",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Willis",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_education_Yolande",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_lodging_Alana",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_lodging_Isabell",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_lodging_Wallace",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_lodging_Winifred",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_office_Carson",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_office_Clayton",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_office_Edythe",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_office_Karima",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_office_Thelma",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_parking_Lynelle",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      },
+      {
+        "building_id": "Fox_public_Denny",
+        "zero_values": 1,
+        "zero_runs": 1,
+        "longest_zero_run_hours": 1
+      }
+    ]
+  },
+  "weather": {
+    "raw_archive_rows": 17568,
+    "rows_in_database": 17544,
+    "missing_complete_weather_records_in_database": 0,
+    "raw_duplicates": 0,
+    "raw_invalid_hourly_intervals": 0,
+    "raw_invalid_humidity": 0,
+    "raw_negative_radiation": 0,
+    "raw_missing_values": {
+      "site_id": 0,
+      "timestamp": 0,
+      "air_temperature": 0,
+      "relative_humidity": 0,
+      "shortwave_radiation": 0
+    },
+    "coverage_checked": true,
+    "missing_timestamps": 0,
+    "unexpected_timestamps": 0
+  },
+  "release": {
+    "parquet_path": "C:\\Uni\\DataEngineeringTest\\corpus\\training_corpus.parquet",
+    "manifest_path": "C:\\Uni\\DataEngineeringTest\\corpus\\training_corpus.manifest.json",
+    "parquet_sha256": "2f99189d5154c68eb71f0e99d7ce20c029e9d4ab7737c59f8e20ba30a561992a",
+    "split_counts": {
+      "test": 1173840,
+      "train": 1177056
+    }
+  }
+}

@@ -6,10 +6,23 @@ venv/
 .ipynb_checkpoints/
 .pytest_cache/
 
-# Rohdaten und erzeugte Daten
-data/
-corpus/
-output/
+# BDG2-Quelldateien (groß, jederzeit neu herunterladbar).
+# Das Open-Meteo-Archiv unter data/raw/ wird bewusst versioniert:
+# Es ist klein, main.py benötigt es, und ein erneuter Abruf liefert
+# nicht garantiert identische Daten.
+data/*.csv
+
+# Erzeugte Artefakte (aus Rohdaten + Code reproduzierbar).
+# Versioniert bleiben: Release-Manifest, Qualitätsbericht, Benchmark.
+corpus/*.duckdb
+corpus/*.parquet
+output/*.duckdb
+output/logs/
+
+# Staging-, WAL- und temporäre Dateien abgebrochener Läufe
+.*.duckdb
+*.duckdb.wal
+.*.tmp.*
 
 # Umgebungsvariablen und Zugangsdaten
 .env

@@ -1,0 +1,19 @@
+{
+  "site_id": "Fox",
+  "url": "https://archive-api.open-meteo.com/v1/archive?latitude=33.424425&longitude=-111.92814&start_date=2016-01-01&end_date=2016-01-03&hourly=temperature_2m&hourly=relative_humidity_2m&hourly=shortwave_radiation&models=era5&timezone=UTC",
+  "params": {
+    "latitude": 33.424425,
+    "longitude": -111.92814,
+    "start_date": "2016-01-01",
+    "end_date": "2016-01-03",
+    "hourly": [
+      "temperature_2m",
+      "relative_humidity_2m",
+      "shortwave_radiation"
+    ],
+    "models": "era5",
+    "timezone": "UTC"
+  },
+  "fetched_at": "2026-11-12T11:46:08.564657+00:00",
+  "sha256": "ae3d47263896b557097c3dc8d1ddf3ba21e9aab3e051f7c2a4c1bb75be16ed43"
+}
